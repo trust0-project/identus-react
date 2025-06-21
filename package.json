@@ -1,0 +1,74 @@
+{
+  "name": "@trust0/identus-react",
+  "version": "0.0.0",
+  "description": "React components for Hyperledger Identus, easily build your Identity applications on Cardano",
+  "main": "build/index.js",
+  "module": "build/index.mjs",
+  "types": "build/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./build/index.mjs",
+      "require": "./build/index.js",
+      "types": "./build/index.d.ts"
+    },
+    "./context": {
+      "import": "./build/context/index.mjs",
+      "require": "./build/context/index.js",
+      "types": "./build/context/index.d.ts"
+    },
+    "./hooks": {
+      "import": "./build/hooks/index.mjs",
+      "require": "./build/hooks/index.js",
+      "types": "./build/hooks/index.d.ts"
+    },
+    "./resolver": {
+      "import": "./build/resolver/index.mjs",
+      "require": "./build/resolver/index.js",
+      "types": "./build/resolver/index.d.ts"
+    },
+    "./db": {
+      "import": "./build/db/index.mjs",
+      "require": "./build/db/index.js",
+      "types": "./build/db/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "sh build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trust0-project/identus-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trust0-project/identus-react/issues"
+  },
+  "homepage": "https://github.com/trust0-project/identus-react#readme",
+  "devDependencies": {
+    "@esbuild-plugins/node-resolve": "^0.2.2",
+    "@trust0/ridb-build": "^0.0.12",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "nx": "20.8.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@trust0/identus-store": "^1.0.0",
+    "@trust0/ridb": "^1.5.27",
+    "@trust0/ridb-core": "^1.7.22",
+    "@trust0/ridb-react": "^1.4.2",
+    "react": "^18.3.1",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.3.1",
+    "uuid": "^11.1.0"
+  },
+  "peerDependencies": {
+    "@hyperledger/identus-sdk": "file:/Users/ribo/Projects/iohk/atala-prism-wallet-sdk-ts",
+    "multiformats": "^9.9.0"
+  },
+  "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538"
+}
